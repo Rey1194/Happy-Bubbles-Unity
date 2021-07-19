@@ -15,12 +15,15 @@ public class Enemy : MonoBehaviour
   // Start is called before the first frame update
   void Start()
   {
+    //Play giggle SFX
+    AudioManager.instance.PlaySFX(3);
+    //normalize rotation
     this.enemyDirection = Random.insideUnitCircle.normalized;
     //Find the Game Manager in the scene
     gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
   }
   // Update is called once per frame
-  void Update()
+  void FixedUpdate()
   {
     //If any of the lives of the enemy are below to 0 them destroy
     if (enemyCollideLife == 0 || enemyTouchLife == 0) {
@@ -46,6 +49,8 @@ public class Enemy : MonoBehaviour
   private void OnCollisionEnter2D(Collision2D other) {
     //Check the tag of the collitions
     if (other.gameObject.tag == "BigBall") {
+      //Play SFX
+      AudioManager.instance.PlaySFX(2);
       //Destroy the ball
       Destroy(other.gameObject);
       //Reduce enemy's life
@@ -54,6 +59,8 @@ public class Enemy : MonoBehaviour
       gameManager.ReduceTime(10);
     }
     else if(other.gameObject.tag == "MidBall") {
+      //Play SFX
+      AudioManager.instance.PlaySFX(2);
       //Destroy the ball
       Destroy(other.gameObject);
       //Reduce enemy's Life
@@ -62,12 +69,14 @@ public class Enemy : MonoBehaviour
       gameManager.ReduceTime(6);
     }
     else if(other.gameObject.tag == "SmallBall") {
+      //Play SFX
+      AudioManager.instance.PlaySFX(2);
       //Destroy the ball
       Destroy(other.gameObject);
       //Reduce enemy's life
       enemyCollideLife--;
       //Reduce Player Time
-      gameManager.ReduceTime(4);
+      gameManager.ReduceTime(2);
     }
   }
 }

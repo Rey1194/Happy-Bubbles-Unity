@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour
   private bool timeIsRunning = false;
 
   private void Start() {
+    //Start Playing the level music
+    AudioManager.instance.PlaylevelMusic();
+    //start counting down the time
     timeIsRunning = true;    
   }
   private void Update() {
@@ -43,6 +46,7 @@ public class GameManager : MonoBehaviour
         //Lose
         Debug.Log("Game Over");     
         loseText.SetActive(true);
+        Time.timeScale = 0;
       }
     }
   }

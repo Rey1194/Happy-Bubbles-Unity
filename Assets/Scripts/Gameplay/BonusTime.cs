@@ -12,9 +12,11 @@ public class BonusTime : MonoBehaviour
   {
     gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     bonusTime = Random.Range(3, 8);
+    //Play sound Effect
+    AudioManager.instance.PlaySFX(1);
   }
   //If is touched, add extra time
-  private void OnMouseDown() {
+  private void OnMouseDown() {    
     //Round to a integer value to avoid problems
     gameManager.AddTime(Mathf.RoundToInt(bonusTime));
     //Destroy the bonus object

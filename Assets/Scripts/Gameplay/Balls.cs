@@ -32,7 +32,7 @@ public class Balls : MonoBehaviour
     //Give a random rotate speed between 30 - 60
     this.rotateSpeed = Random.Range(30f, 60f);
   }
-  private void Update() {
+  private void FixedUpdate() {
     //rotate the ball
     this.RotateBall();
     //Destroy the ball after time
