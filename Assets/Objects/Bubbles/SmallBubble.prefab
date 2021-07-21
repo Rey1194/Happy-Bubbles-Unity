@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 491358622871550739}
   m_Layer: 0
   m_Name: SmallBubble
-  m_TagString: SmallBall
+  m_TagString: Bubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -227,6 +227,7 @@ MonoBehaviour:
   midBall: {fileID: 4401159692192346308, guid: 1961f5d4433a6bd4793adac9005fbe79, type: 3}
   bigBall: {fileID: 2866188495612593940, guid: 71b7877bff6f4304687e170d38dad69a, type: 3}
   collectible: {fileID: 6613505899808816310, guid: ac5b90af3ad0cd343a84a3f25fdef2bb, type: 3}
+  explotionFX: {fileID: 7230259963350502142, guid: 21c86938a0898ff44a07f298eeca2482, type: 3}
   moveSpeed: 1.1
   selfDestroyTime: 30
   chanceToDrop: 30

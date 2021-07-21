@@ -186,6 +186,7 @@ MonoBehaviour:
   enemyCollideLife: 3
   enemyTouchLife: 100
   enemySpeed: 1
+  explotionFX: {fileID: 7251405496261896155, guid: 6f99fb9c93643aa4ab1e206ea1b9b879, type: 3}
 --- !u!58 &8785469092870115143
 CircleCollider2D:
   m_ObjectHideFlags: 0

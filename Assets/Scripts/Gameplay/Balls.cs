@@ -12,6 +12,7 @@ public class Balls : MonoBehaviour
   [SerializeField] private GameObject midBall;
   [SerializeField] private GameObject bigBall;
   [SerializeField] private GameObject collectible;
+  [SerializeField] private GameObject explotionFX;
   //Editor variables
   [SerializeField] private float moveSpeed = 0;
   [SerializeField] private float selfDestroyTime = 0;
@@ -67,6 +68,8 @@ public class Balls : MonoBehaviour
       Destroy(this.gameObject);
       //Reduce player's time
       gameManager.ReduceTime(Mathf.RoundToInt(timeToReduce));
+      //Instantiate the explotion particle effect
+      Instantiate(explotionFX, this.transform.position, this.transform.rotation);
     }
   }
   //Change to Spawn a bonus time object
@@ -90,6 +93,8 @@ public class Balls : MonoBehaviour
         //instantiate 2 mid size balls
         Instantiate(this.midBall, this.transform.position, Quaternion.identity);
         Instantiate(this.midBall, this.transform.position, Quaternion.identity);
+        //Instantiate the explotion particle effect
+        Instantiate(explotionFX, this.transform.position, this.transform.rotation);
         //Instantiate the Adding bonus time
         ChanceToDrop();        
         break;
@@ -100,6 +105,8 @@ public class Balls : MonoBehaviour
         //Instantiate 2 small balls
         Instantiate(this.smallBall, this.transform.position, Quaternion.identity);
         Instantiate(this.smallBall, this.transform.position, Quaternion.identity);
+        //Instantiate the explotion particle effect
+        Instantiate(explotionFX,this.transform.position, this.transform.rotation);
         //Instantiate the Adding bonus time
         ChanceToDrop();        
         break;
@@ -107,6 +114,8 @@ public class Balls : MonoBehaviour
       case BallSize.small:        
         //destroy the ball
         Destroy(this.gameObject);
+        //Instantiate the explotion particle effect
+        Instantiate(explotionFX, this.transform.position, this.transform.rotation);
         //Instantiate the Adding bonus time
         ChanceToDrop();        
         break;

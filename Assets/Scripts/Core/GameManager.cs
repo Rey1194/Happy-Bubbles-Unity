@@ -45,8 +45,8 @@ public class GameManager : MonoBehaviour
       else {
         //Lose
         Debug.Log("Game Over");     
-        loseText.SetActive(true);
-        Time.timeScale = 0;
+        //loseText.SetActive(true);
+        //Time.timeScale = 0;
       }
     }
   }
