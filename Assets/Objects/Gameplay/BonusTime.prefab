@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6316049240416424695}
   m_Layer: 0
   m_Name: BonusTime
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fb175fced0c99469c1fb7ee11e9ab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explotionVFX: {fileID: 988752688168901204, guid: a8cee5d9e0778304eb16e930132af9cd, type: 3}
 --- !u!58 &3065826433533252628
 CircleCollider2D:
   m_ObjectHideFlags: 0

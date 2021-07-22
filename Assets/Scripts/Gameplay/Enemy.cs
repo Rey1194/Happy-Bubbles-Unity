@@ -67,9 +67,5 @@ public class Enemy : MonoBehaviour
       //Reduce player Time
       gameManager.ReduceTime(Mathf.RoundToInt(timeToReduce));
     }
-    else {
-      //the message show if collide with the bonus too -- CHECK IT
-      Debug.LogError("error with the bubbles collition");
-    }
   }
 }

@@ -20,10 +20,10 @@ public class Balls : MonoBehaviour
   private float rotateSpeed;
   private float localSpeed;
   private Vector2 moveDirection;
-  private GameManager gameManager;  
+  private GameManager gameManager;
   [Range(0, 100)] public float chanceToDrop;
 
-  private void Start() {    
+  private void Start() {
     //find the Game Manager in the scene
     gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     //save the move speed to use for moving the ball again
@@ -62,7 +62,7 @@ public class Balls : MonoBehaviour
     selfDestroyTime -= Time.deltaTime;
     //Create a random value to discount
     float timeToReduce = Random.Range(1, 5);
-    //if the time is equal or less to 0 
+    //if the time is equal or less to 0
     if(selfDestroyTime <= 0) {
       //Destroy te ball
       Destroy(this.gameObject);
@@ -96,10 +96,10 @@ public class Balls : MonoBehaviour
         //Instantiate the explotion particle effect
         Instantiate(explotionFX, this.transform.position, this.transform.rotation);
         //Instantiate the Adding bonus time
-        ChanceToDrop();        
+        ChanceToDrop();       
         break;
       //If is mid size
-      case BallSize.mid:        
+      case BallSize.mid:
         //Destroy the ball
         Destroy(this.gameObject);
         //Instantiate 2 small balls
@@ -108,16 +108,16 @@ public class Balls : MonoBehaviour
         //Instantiate the explotion particle effect
         Instantiate(explotionFX,this.transform.position, this.transform.rotation);
         //Instantiate the Adding bonus time
-        ChanceToDrop();        
+        ChanceToDrop();     
         break;
       //If if a small ball
-      case BallSize.small:        
+      case BallSize.small:
         //destroy the ball
         Destroy(this.gameObject);
         //Instantiate the explotion particle effect
         Instantiate(explotionFX, this.transform.position, this.transform.rotation);
         //Instantiate the Adding bonus time
-        ChanceToDrop();        
+        ChanceToDrop();
         break;
       //Debug log error message
       default:
