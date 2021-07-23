@@ -51,6 +51,8 @@ public class Enemy : MonoBehaviour
     GameManager.instance.SlowMo();
     //Play the damage SFX
     AudioManager.instance.PlaySFX(2);
+    //Call the screen shake method from the game manager
+    GameManager.instance.CameraShake();
   }  
   private void OnCollisionEnter2D(Collision2D other) {
     //Check the tag of the collitions
@@ -65,6 +67,8 @@ public class Enemy : MonoBehaviour
       gameManager.ReduceTime(Mathf.RoundToInt(timeToReduce));
       //Call the method to slow time from the Game manager
       GameManager.instance.SlowMo();
+      //Call the screen shake method from the game manager
+      GameManager.instance.CameraShake();
     }
   }
 }

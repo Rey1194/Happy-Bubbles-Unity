@@ -15,13 +15,14 @@ public class GameManager : MonoBehaviour
   [SerializeField] private float timeRemaining = 0;
   [SerializeField] private float slowDownValue = 0.5f;
   [SerializeField] private float slowDownLenght = 2f;
+  [SerializeField] private Animator camAnime;
   //private variables
   private bool timeIsRunning = false;
 
   private void Awake() {
     instance = this;
   }
-  private void Start() {
+  private void Start() {    
     //Start Playing the level music
     AudioManager.instance.PlaylevelMusic();
     //start counting down the time
@@ -51,6 +52,11 @@ public class GameManager : MonoBehaviour
   public void SlowMo() {
     Time.timeScale = slowDownValue;
     Time.fixedDeltaTime = Time.timeScale * 0.02f;
+  }
+  //Screen shake method
+  public void CameraShake() {
+    //Call the animation controller and trigger the animation
+    camAnime.SetTrigger("CameraShake");
   }
   //Timer method
   public void CountDown() {
