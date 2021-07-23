@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {  
-  //References in the editor
-  [SerializeField] private int enemyCollideLife = 0;
-  [SerializeField] private int enemyTouchLife = 0;
+  //References in the editor  
+  [SerializeField] private int enemyLife = 0;
   [SerializeField] private float enemySpeed = 0f;
   [SerializeField] private GameObject explotionFX;
   //private variables
@@ -30,31 +29,29 @@ public class Enemy : MonoBehaviour
   void Update()
   {
     //If any of the lives of the enemy are below to 0 them destroy
-    if (enemyCollideLife == 0 || enemyTouchLife == 0) {
+    if (enemyLife == 0) {
       //Destroy this enemy
       Destroy(this.gameObject);
       //Instantiate the explode effect
       Instantiate(explotionFX, this.transform.position, this.transform.rotation);
-    }
+    }    
     //Call the translate method
     TranslateEnemy();
   }
   //Move the enemy
   private void TranslateEnemy() {
-    //translate the enemy to the nearest bubble    
+    //translate the enemy Arround the world 
     transform.Translate(enemyDirection * enemySpeed * Time.deltaTime, Space.World);
   }
-  //Stop & Destroy the enemy if is touched
-  private void OnMouseDrag() {
+  //Stop & Reduce the live points of the enemy if is touched
+  private void OnMouseDown() {
     //Reduce enemy live if is touched
-    enemyTouchLife--;
-    //reduce it's speed
-    enemySpeed = 0;
-  }
-  //enemy move again if not touched
-  private void OnMouseExit() {
-    enemySpeed = 1;
-  }
+    enemyLife--;
+    //Call the method to slow time from the Game manager
+    GameManager.instance.SlowMo();
+    //Play the damage SFX
+    AudioManager.instance.PlaySFX(2);
+  }  
   private void OnCollisionEnter2D(Collision2D other) {
     //Check the tag of the collitions
     if (other.gameObject.tag == "Bubble") {
@@ -63,9 +60,11 @@ public class Enemy : MonoBehaviour
       //Destroy the ball
       Destroy(other.gameObject);
       //Reduce enemy's life
-      enemyCollideLife--;
+      enemyLife--;
       //Reduce player Time
       gameManager.ReduceTime(Mathf.RoundToInt(timeToReduce));
+      //Call the method to slow time from the Game manager
+      GameManager.instance.SlowMo();
     }
   }
 }

@@ -183,9 +183,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67c0d7c8d500a6c40b8fe9a734648bfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyCollideLife: 3
-  enemyTouchLife: 100
-  enemySpeed: 1
+  enemyLife: 3
+  enemySpeed: 1.2
   explotionFX: {fileID: 7251405496261896155, guid: 6f99fb9c93643aa4ab1e206ea1b9b879, type: 3}
 --- !u!58 &8785469092870115143
 CircleCollider2D:

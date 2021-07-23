@@ -1192,6 +1192,8 @@ MonoBehaviour:
   loseText: {fileID: 2047265471}
   timeText: {fileID: 629322588}
   timeRemaining: 60
+  slowDownValue: 0.5
+  slowDownLenght: 2
 --- !u!4 &426892827
 Transform:
   m_ObjectHideFlags: 0
@@ -1242,7 +1244,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.5521538, g: 0.7196877, b: 0.8301887, a: 0.6392157}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

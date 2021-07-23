@@ -6,14 +6,21 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+  //Conver to singleton
+  public static GameManager instance;
   //References in the editor
   [SerializeField] private GameObject winText;
   [SerializeField] private GameObject loseText;
   [SerializeField] private Text timeText;
   [SerializeField] private float timeRemaining = 0;
+  [SerializeField] private float slowDownValue = 0.5f;
+  [SerializeField] private float slowDownLenght = 2f;
   //private variables
   private bool timeIsRunning = false;
 
+  private void Awake() {
+    instance = this;
+  }
   private void Start() {
     //Start Playing the level music
     AudioManager.instance.PlaylevelMusic();
@@ -21,21 +28,31 @@ public class GameManager : MonoBehaviour
     timeIsRunning = true;    
   }
   private void Update() {
+    //Call the method to reduce time
     CountDown();
+    //increase the time scale
+    Time.timeScale += (1f / slowDownLenght) * Time.unscaledDeltaTime;
+    //Clamp the time scale to avoid suprassing the 1f value
+    Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
   }
-  //Restar button
+  //Restar level method
   public void Restart() {
     SceneManager.LoadScene("Samplelevel");
   }
-  //Adding time if a ball is detroyed
+  //method to increase time
   public void AddTime(float addTime) {
     this.timeRemaining += addTime;
   }
-  //Reduce Time if ball colide with Other ball
+  //method to reduce time
   public void ReduceTime(float decreaseTime) {
     this.timeRemaining -= decreaseTime;
   }
-  //Timer
+  //method slow the time
+  public void SlowMo() {
+    Time.timeScale = slowDownValue;
+    Time.fixedDeltaTime = Time.timeScale * 0.02f;
+  }
+  //Timer method
   public void CountDown() {
     if (timeIsRunning == true) {
       if(timeRemaining > 0) {
