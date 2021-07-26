@@ -5,28 +5,23 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
-{
-  //Conver to singleton
-  public static GameManager instance;
-  //References in the editor
-  [SerializeField] private GameObject winText;
+{  
+  public static GameManager instance;                                       //Convert to singleton  
+  [SerializeField] private GameObject winText;                              //References in the editor
   [SerializeField] private GameObject loseText;
+  [SerializeField] private Animator camAnime;
   [SerializeField] private Text timeText;
   [SerializeField] private float timeRemaining = 0;
   [SerializeField] private float slowDownValue = 0.5f;
   [SerializeField] private float slowDownLenght = 2f;
-  [SerializeField] private Animator camAnime;
-  //private variables
-  private bool timeIsRunning = false;
+  private bool timeIsRunning = false;                                       //private variables
 
   private void Awake() {
     instance = this;
   }
-  private void Start() {    
-    //Start Playing the level music
-    AudioManager.instance.PlaylevelMusic();
-    //start counting down the time
-    timeIsRunning = true;    
+  private void Start() {
+    AudioManager.instance.PlaylevelMusic();                                 //Start Playing the level music    
+    timeIsRunning = true;                                                   //start counting down the time
   }
   private void Update() {
     //Call the method to reduce time
@@ -38,7 +33,7 @@ public class GameManager : MonoBehaviour
   }
   //Restar level method
   public void Restart() {
-    SceneManager.LoadScene("Samplelevel");
+    SceneManager.LoadScene("LevelScene");
   }
   //method to increase time
   public void AddTime(float addTime) {
@@ -67,9 +62,9 @@ public class GameManager : MonoBehaviour
       }
       else {
         //Lose
-        Debug.Log("Game Over");     
-        //loseText.SetActive(true);
-        //Time.timeScale = 0;
+        Debug.Log("Game Over");
+        loseText.SetActive(true);
+        Time.timeScale = 0;
       }
     }
   }

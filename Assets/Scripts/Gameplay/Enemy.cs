@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
-{  
-  //References in the editor  
+{
+  //References in the editor
   [SerializeField] private int enemyLife = 0;
   [SerializeField] private float enemySpeed = 0f;
   [SerializeField] private GameObject explotionFX;
@@ -34,13 +34,13 @@ public class Enemy : MonoBehaviour
       Destroy(this.gameObject);
       //Instantiate the explode effect
       Instantiate(explotionFX, this.transform.position, this.transform.rotation);
-    }    
+    }
     //Call the translate method
     TranslateEnemy();
   }
   //Move the enemy
   private void TranslateEnemy() {
-    //translate the enemy Arround the world 
+    //translate the enemy Arround the world
     transform.Translate(enemyDirection * enemySpeed * Time.deltaTime, Space.World);
   }
   //Stop & Reduce the live points of the enemy if is touched
@@ -53,7 +53,7 @@ public class Enemy : MonoBehaviour
     AudioManager.instance.PlaySFX(2);
     //Call the screen shake method from the game manager
     GameManager.instance.CameraShake();
-  }  
+  }
   private void OnCollisionEnter2D(Collision2D other) {
     //Check the tag of the collitions
     if (other.gameObject.tag == "Bubble") {
