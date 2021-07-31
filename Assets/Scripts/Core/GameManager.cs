@@ -5,23 +5,29 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
-{  
-  public static GameManager instance;                                       //Convert to singleton  
-  [SerializeField] private GameObject winText;                              //References in the editor
+{
+  //Convert to singleton
+  public static GameManager instance;
+  //References in the editor
+  [SerializeField] private GameObject winText;
   [SerializeField] private GameObject loseText;
   [SerializeField] private Animator camAnime;
+  [SerializeField] private Animator timeAnime;
   [SerializeField] private Text timeText;
   [SerializeField] private float timeRemaining = 0;
   [SerializeField] private float slowDownValue = 0.5f;
   [SerializeField] private float slowDownLenght = 2f;
-  private bool timeIsRunning = false;                                       //private variables
+  //private variables
+  private bool timeIsRunning = false;
 
   private void Awake() {
     instance = this;
   }
   private void Start() {
-    AudioManager.instance.PlaylevelMusic();                                 //Start Playing the level music    
-    timeIsRunning = true;                                                   //start counting down the time
+    //Start Playing the level music
+    AudioManager.instance.PlaylevelMusic();
+    //start counting down the time
+    timeIsRunning = true;
   }
   private void Update() {
     //Call the method to reduce time
@@ -38,13 +44,16 @@ public class GameManager : MonoBehaviour
   //method to increase time
   public void AddTime(float addTime) {
     this.timeRemaining += addTime;
+    timeAnime.SetTrigger("CanvasTimeAdd");
   }
   //method to reduce time
   public void ReduceTime(float decreaseTime) {
     this.timeRemaining -= decreaseTime;
+    timeAnime.SetTrigger("CanvasTimeLose");
   }
   //method slow the time
   public void SlowMo() {
+    //change the default value of time scale to slow the time
     Time.timeScale = slowDownValue;
     Time.fixedDeltaTime = Time.timeScale * 0.02f;
   }

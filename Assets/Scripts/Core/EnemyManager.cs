@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
   //Edtor's variables reference
-  [SerializeField] private GameObject[] enemyBalls;  
+  [SerializeField] private GameObject[] enemyBalls;
   //private variables
   [SerializeField] private float enemySpawnTime;
   [SerializeField] private float enemyWaitTime;
@@ -15,9 +15,6 @@ public class EnemyManager : MonoBehaviour
   {
     //call the method to spawn enemies
     InvokeRepeating("SpawEnemy", enemySpawnTime, enemyWaitTime);
-  }
-  private void Update() {
-    
   }
   //Spawn Enemies
   public void SpawEnemy() {

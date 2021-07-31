@@ -15,11 +15,11 @@ C:/Users/HP/Desktop/Unity Proyects/Happy-Bubbles
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56085
+52305
 Successfully changed project path to: C:/Users/HP/Desktop/Unity Proyects/Happy-Bubbles
 C:/Users/HP/Desktop/Unity Proyects/Happy-Bubbles
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 173.77 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 180.86 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.12f1 (afcadd793de6)
 [Subsystems] Discovering subsystems at path C:/Unity/2021.1.12f1/Editor/Data/Resources/UnitySubsystems
@@ -35,94 +35,94 @@ Initialize mono
 Mono path[0] = 'C:/Unity/2021.1.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Unity/2021.1.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Unity/2021.1.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56960
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56448
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Unity/2021.1.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Unity/2021.1.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002820 seconds.
+Registered in 0.002884 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 150.16 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 156.41 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.232 seconds
+- Completed reload, in  3.076 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2232ms)
-		BeginReloadAssembly (78ms)
+	ReloadAssembly (3076ms)
+		BeginReloadAssembly (79ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (798ms)
+		EndReloadAssembly (1502ms)
 			LoadAssemblies (76ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (232ms)
+			SetupTypeCache (239ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (347ms)
+			SetupLoadedEditorAssemblies (362ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (150ms)
+				RefreshPlugins (157ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (143ms)
-				ProcessInitializeOnLoadMethodAttributes (43ms)
+				ProcessInitializeOnLoadAttributes (148ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.009762 seconds.
+Registered in 0.009796 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\Unity Proyects\Happy-Bubbles\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\Unity Proyects\Happy-Bubbles\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 151.49 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 170.84 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.886 seconds
+- Completed reload, in  2.880 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1887ms)
-		BeginReloadAssembly (226ms)
+	ReloadAssembly (2881ms)
+		BeginReloadAssembly (236ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (1567ms)
-			LoadAssemblies (135ms)
+		EndReloadAssembly (2547ms)
+			LoadAssemblies (155ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (517ms)
+			SetupTypeCache (542ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (79ms)
-			SetupLoadedEditorAssemblies (671ms)
+			RebuildScriptCaches (85ms)
+			SetupLoadedEditorAssemblies (1561ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (152ms)
+				RefreshPlugins (171ms)
 				BeforeProcessingInitializeOnLoad (137ms)
-				ProcessInitializeOnLoadAttributes (341ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				ProcessInitializeOnLoadAttributes (1207ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (42ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.32 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 0.98 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3695 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 139.9 MB.
-System memory in use after: 140.0 MB.
+System memory in use before: 139.8 MB.
+System memory in use after: 139.9 MB.
 
 Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 4144.
-Total: 4.367700 ms (FindLiveObjects: 0.412300 ms CreateObjectMapping: 0.147900 ms MarkObjects: 3.627600 ms  DeleteObjects: 0.177900 ms)
+Total: 5.031700 ms (FindLiveObjects: 0.482300 ms CreateObjectMapping: 0.229300 ms MarkObjects: 4.119300 ms  DeleteObjects: 0.198100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -136,6 +136,571 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/Core/GameManager.cs
-  artifactKey: Guid(94be0a56f8539564f8db69c66acf405b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Core/GameManager.cs using Guid(94be0a56f8539564f8db69c66acf405b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '775fa2298af42d230f2c4f38019a7238') in 0.214035 seconds 
+  path: Assets/Sprites/Backgrounds/underwater-fantasy-files
+  artifactKey: Guid(49c89b7acac438c42ba3666246432e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-fantasy-files using Guid(49c89b7acac438c42ba3666246432e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd07d7391e2180469813bc9086c69f54a') in 0.303814 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.137224 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-fantasy-files/PSD
+  artifactKey: Guid(81338ec63cb12264b85d3ca0a60da123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-fantasy-files/PSD using Guid(81338ec63cb12264b85d3ca0a60da123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed7351dc5c13140ed53fea2758032463') in 0.010077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-fantasy-files/PSD/underwater-fantasy.psd
+  artifactKey: Guid(3070b3c07671a8f4590de21adc3d84c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-fantasy-files/PSD/underwater-fantasy.psd using Guid(3070b3c07671a8f4590de21adc3d84c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01712b6c752f34be8bf65c2fc24729e0') in 2.479345 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.658188 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG
+  artifactKey: Guid(f9794d51718147446bb2b03ab25f2113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG using Guid(f9794d51718147446bb2b03ab25f2113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9839a4411b5fedb002be3800edf79520') in 0.012022 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/underwater-fantasy-preview.png
+  artifactKey: Guid(2ab61dee521218343bd886417d3e0f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/underwater-fantasy-preview.png using Guid(2ab61dee521218343bd886417d3e0f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ade3f5ad81bf7cabeeab869d01feee6') in 0.423518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.198553 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers
+  artifactKey: Guid(206d0aa429ef3ee43ae8bac066874cf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers using Guid(206d0aa429ef3ee43ae8bac066874cf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddc01afafd434ff94371fb484ea2c297') in 0.012044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.040424 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/far.png
+  artifactKey: Guid(76d548903d1b787499a6528731d69137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/far.png using Guid(76d548903d1b787499a6528731d69137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f0ac48337179037f8c9b350f5965e95') in 0.067535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/foregound-merged.png
+  artifactKey: Guid(0e95657e23f96074e8a63fe4e5673b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/foregound-merged.png using Guid(0e95657e23f96074e8a63fe4e5673b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36c31e29b169b03550fff972c9a08fa1') in 0.092995 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/foreground-2.png
+  artifactKey: Guid(59fdc0606da72d14b8007542535c02d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/foreground-2.png using Guid(59fdc0606da72d14b8007542535c02d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3576f58c317ced4be8e5b23b9c2e1ca') in 0.085141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/foreground-1.png
+  artifactKey: Guid(e324612982e153b41858a1a6deee88d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/foreground-1.png using Guid(e324612982e153b41858a1a6deee88d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d1b3e82cf5116f51a660a4cccbc171d') in 0.085164 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/sand.png
+  artifactKey: Guid(69611d47becef274baae964128d92b53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/sand.png using Guid(69611d47becef274baae964128d92b53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '535bdce051dd7db01953f427523ad643') in 0.066275 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 44.287298 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/far.png
+  artifactKey: Guid(76d548903d1b787499a6528731d69137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/far.png using Guid(76d548903d1b787499a6528731d69137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e35effb5c669835302b60404a3647e4') in 0.017991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.353097 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/far.png
+  artifactKey: Guid(76d548903d1b787499a6528731d69137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/far.png using Guid(76d548903d1b787499a6528731d69137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9cb3a69b3631be3e762687ffc026c16') in 0.018146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.330971 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/far.png
+  artifactKey: Guid(76d548903d1b787499a6528731d69137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/far.png using Guid(76d548903d1b787499a6528731d69137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d5431890c3a9b3679df1a46c413e386') in 0.022892 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32.665380 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/foregound-merged.png
+  artifactKey: Guid(0e95657e23f96074e8a63fe4e5673b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/foregound-merged.png using Guid(0e95657e23f96074e8a63fe4e5673b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4f40dc10d8622d2ca997d2dd204b7c4') in 0.073572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/foreground-2.png
+  artifactKey: Guid(59fdc0606da72d14b8007542535c02d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/foreground-2.png using Guid(59fdc0606da72d14b8007542535c02d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fb55d7717de6fedac5dec044dd2f0aa') in 0.026413 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000406 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/foreground-1.png
+  artifactKey: Guid(e324612982e153b41858a1a6deee88d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/foreground-1.png using Guid(e324612982e153b41858a1a6deee88d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0babcd9d443ab1e5f12ec8bd691267b1') in 0.037590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/sand.png
+  artifactKey: Guid(69611d47becef274baae964128d92b53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/sand.png using Guid(69611d47becef274baae964128d92b53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31a8d20af024b46d8124326f6f850ac5') in 0.025934 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.723268 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-diving-files
+  artifactKey: Guid(833f689166f121b4e84df97310feaa79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-diving-files using Guid(833f689166f121b4e84df97310feaa79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45fecfe435561da4ceba3e9a88253107') in 0.012691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-diving-files/code
+  artifactKey: Guid(94631f1391e656f49a98ed5e03e8f7ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-diving-files/code using Guid(94631f1391e656f49a98ed5e03e8f7ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72a1526bb66b0f6fb3fe700da6e83ef4') in 0.042088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 228.808115 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/far.png
+  artifactKey: Guid(76d548903d1b787499a6528731d69137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/far.png using Guid(76d548903d1b787499a6528731d69137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba6907cd23c1e272e6e74f5c1bc3c926') in 0.024437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.324317 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/far.png
+  artifactKey: Guid(76d548903d1b787499a6528731d69137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-fantasy-files/PNG/layers/far.png using Guid(76d548903d1b787499a6528731d69137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34ce74704eba4601e41f7bb29a4cee77') in 0.020998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 159.245764 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-diving-files/GIF
+  artifactKey: Guid(8c365791ab6957746b45f1cd3f3d96b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-diving-files/GIF using Guid(8c365791ab6957746b45f1cd3f3d96b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9182e431b01b58e7df968b6c9ac9464f') in 0.104865 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.393595 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-diving-files/GIF/enemies
+  artifactKey: Guid(66140ece3eface24d9241e858f75efb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-diving-files/GIF/enemies using Guid(66140ece3eface24d9241e858f75efb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9145e1de8a88cbacec9f81925dc2731') in 0.011795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.321623 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-diving-files/GIF/FX
+  artifactKey: Guid(d9bce2e744838384893c9b8a52608db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-diving-files/GIF/FX using Guid(d9bce2e744838384893c9b8a52608db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ab65349845d6d3e49398948ecf6111a') in 0.254766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-diving-files/GIF/FX/explosion-big.gif
+  artifactKey: Guid(74b448ee282443947a2acd38aa7f8868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-diving-files/GIF/FX/explosion-big.gif using Guid(74b448ee282443947a2acd38aa7f8868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce13ad8cf5c7883d38f396839ba2932a') in 0.111343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-diving-files/GIF/FX/explosion-small.gif
+  artifactKey: Guid(8db06c2ac0d32e6479eec26aa57ea9e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-diving-files/GIF/FX/explosion-small.gif using Guid(8db06c2ac0d32e6479eec26aa57ea9e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c6778485a58ee953424f24b348237b1') in 0.067189 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-diving-files/GIF/FX/bubbles.gif
+  artifactKey: Guid(a0fdfb2aca9fada48a024a3062828c9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-diving-files/GIF/FX/bubbles.gif using Guid(a0fdfb2aca9fada48a024a3062828c9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2e9f0adab58cddf9eb9fda5924afcc0') in 0.246445 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-diving-files/GIF/FX/explosion.gif
+  artifactKey: Guid(1e6a7891310164c4d828e06876b1e37d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-diving-files/GIF/FX/explosion.gif using Guid(1e6a7891310164c4d828e06876b1e37d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ce7adfc2ad33fd372dce396283c3200') in 0.068897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-diving-files/GIF/FX/enemy-death.gif
+  artifactKey: Guid(c4437d09168329343860424a33aba1d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-diving-files/GIF/FX/enemy-death.gif using Guid(c4437d09168329343860424a33aba1d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '161369ca6a23a16d7c24c15c768dfbd7') in 0.052943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.012869 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-diving-files/PNG/environment/background.png
+  artifactKey: Guid(d7901b7965b0ca448965c3e77766a85a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-diving-files/PNG/environment/background.png using Guid(d7901b7965b0ca448965c3e77766a85a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '885e8a1b3a63dd79f989b4030337329f') in 0.340423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-diving-files/PNG/environment/tiles.png
+  artifactKey: Guid(a5fe136ce0b26a0499c5f441270f4026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-diving-files/PNG/environment/tiles.png using Guid(a5fe136ce0b26a0499c5f441270f4026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52c4a25c98cecf44f75c014159095270') in 0.228631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-diving-files/PNG/environment/props.png
+  artifactKey: Guid(1cef5c22346de0946ae15ccb8d738793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-diving-files/PNG/environment/props.png using Guid(1cef5c22346de0946ae15ccb8d738793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fe078b8a9ccebb6290ae2bd232a2ead') in 0.115044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Sprites/Backgrounds/underwater-diving-files/PNG/environment/midground.png
+  artifactKey: Guid(ee48e00ef0c3a6c469a38cafc11a2ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backgrounds/underwater-diving-files/PNG/environment/midground.png using Guid(ee48e00ef0c3a6c469a38cafc11a2ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7a551c03b290dda4bbe127709103a81') in 0.079972 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009822 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\Unity Proyects\Happy-Bubbles\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\Unity Proyects\Happy-Bubbles\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.17 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.737 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1737ms)
+		BeginReloadAssembly (186ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (65ms)
+		EndReloadAssembly (1442ms)
+			LoadAssemblies (135ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (549ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (463ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (95ms)
+				ProcessInitializeOnLoadAttributes (336ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (25ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.18 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3696 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.8 MB.
+System memory in use after: 156.0 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4541.
+Total: 5.069600 ms (FindLiveObjects: 0.506800 ms CreateObjectMapping: 0.197000 ms MarkObjects: 4.197700 ms  DeleteObjects: 0.166100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.168951 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\Unity Proyects\Happy-Bubbles\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\Unity Proyects\Happy-Bubbles\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.09 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.475 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2476ms)
+		BeginReloadAssembly (242ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (22ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (76ms)
+		EndReloadAssembly (2099ms)
+			LoadAssemblies (194ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (760ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (95ms)
+			SetupLoadedEditorAssemblies (668ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (138ms)
+				ProcessInitializeOnLoadAttributes (483ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (43ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 2.85 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3680 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.3 MB.
+System memory in use after: 155.4 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4544.
+Total: 6.149000 ms (FindLiveObjects: 0.753500 ms CreateObjectMapping: 0.414300 ms MarkObjects: 4.816200 ms  DeleteObjects: 0.162900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009400 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\Unity Proyects\Happy-Bubbles\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\Unity Proyects\Happy-Bubbles\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.733 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1734ms)
+		BeginReloadAssembly (194ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (16ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (66ms)
+		EndReloadAssembly (1440ms)
+			LoadAssemblies (132ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (554ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (489ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (105ms)
+				ProcessInitializeOnLoadAttributes (350ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (28ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.14 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3680 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.3 MB.
+System memory in use after: 155.4 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4547.
+Total: 4.884500 ms (FindLiveObjects: 0.455100 ms CreateObjectMapping: 0.152600 ms MarkObjects: 4.106500 ms  DeleteObjects: 0.168200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008567 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\Unity Proyects\Happy-Bubbles\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\Unity Proyects\Happy-Bubbles\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.22 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.782 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1783ms)
+		BeginReloadAssembly (172ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (16ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (54ms)
+		EndReloadAssembly (1521ms)
+			LoadAssemblies (135ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (541ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (518ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (121ms)
+				ProcessInitializeOnLoadAttributes (361ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (31ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.49 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3680 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.3 MB.
+System memory in use after: 155.4 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4550.
+Total: 5.343500 ms (FindLiveObjects: 0.543400 ms CreateObjectMapping: 0.277900 ms MarkObjects: 4.317200 ms  DeleteObjects: 0.202500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009599 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\Unity Proyects\Happy-Bubbles\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\Unity Proyects\Happy-Bubbles\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.18 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.739 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1739ms)
+		BeginReloadAssembly (189ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (63ms)
+		EndReloadAssembly (1454ms)
+			LoadAssemblies (137ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (516ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (78ms)
+			SetupLoadedEditorAssemblies (492ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (110ms)
+				ProcessInitializeOnLoadAttributes (348ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (27ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.20 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3680 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.3 MB.
+System memory in use after: 155.5 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4553.
+Total: 4.589400 ms (FindLiveObjects: 0.407000 ms CreateObjectMapping: 0.107500 ms MarkObjects: 3.913300 ms  DeleteObjects: 0.160400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008375 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\Unity Proyects\Happy-Bubbles\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\Unity Proyects\Happy-Bubbles\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.078 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2079ms)
+		BeginReloadAssembly (194ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (16ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (60ms)
+		EndReloadAssembly (1779ms)
+			LoadAssemblies (146ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (550ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (71ms)
+			SetupLoadedEditorAssemblies (659ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (133ms)
+				ProcessInitializeOnLoadAttributes (485ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (37ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.44 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3680 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.4 MB.
+System memory in use after: 155.5 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4556.
+Total: 5.805700 ms (FindLiveObjects: 0.512200 ms CreateObjectMapping: 0.281800 ms MarkObjects: 4.857100 ms  DeleteObjects: 0.152200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
