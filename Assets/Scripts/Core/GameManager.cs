@@ -1,16 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
   //Convert to singleton
   public static GameManager instance;
-  //References in the editor
-  [SerializeField] private GameObject winText;
-  [SerializeField] private GameObject loseText;
+  //References in the editor  
   [SerializeField] private Animator camAnime;
   [SerializeField] private Animator timeAnime;
   [SerializeField] private Text timeText;
@@ -32,14 +27,13 @@ public class GameManager : MonoBehaviour
   private void Update() {
     //Call the method to reduce time
     CountDown();
-    //increase the time scale
-    Time.timeScale += (1f / slowDownLenght) * Time.unscaledDeltaTime;
-    //Clamp the time scale to avoid suprassing the 1f value
-    Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
-  }
-  //Restar level method
-  public void Restart() {
-    SceneManager.LoadScene("LevelScene");
+    //Che if the game is paused, if not, increase the time scale
+    if (UIManager.isPaused == false) {
+      //increase the time scale
+      Time.timeScale += (1f / slowDownLenght) * Time.unscaledDeltaTime;
+      //Clamp the time scale to avoid suprassing the 1f value
+      Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
+    }
   }
   //method to increase time
   public void AddTime(float addTime) {
@@ -72,7 +66,6 @@ public class GameManager : MonoBehaviour
       else {
         //Lose
         Debug.Log("Game Over");
-        loseText.SetActive(true);
         Time.timeScale = 0;
       }
     }
