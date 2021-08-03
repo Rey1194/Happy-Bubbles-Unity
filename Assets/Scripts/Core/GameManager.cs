@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
 {
   //Convert to singleton
   public static GameManager instance;
-  //References in the editor  
+  //References in the editor
   [SerializeField] private Animator camAnime;
   [SerializeField] private Animator timeAnime;
   [SerializeField] private Text timeText;
