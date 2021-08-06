@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-  //References in the editor
-  [SerializeField] private int enemyLife = 0;
+  //References in the editor  
   [SerializeField] private float enemySpeed = 0f;
   [SerializeField] private GameObject explotionFX;
   //private variables
@@ -25,14 +24,7 @@ public class Enemy : MonoBehaviour
   }
   // Update is called once per frame
   void Update()
-  {
-    //If any of the lives of the enemy are below to 0 them destroy
-    if (enemyLife == 0) {
-      //Destroy this enemy
-      Destroy(this.gameObject);
-      //Instantiate the explode effect
-      Instantiate(explotionFX, this.transform.position, this.transform.rotation);
-    }
+  {  
     //Call the translate method
     TranslateEnemy();
   }
@@ -43,14 +35,16 @@ public class Enemy : MonoBehaviour
   }
   //Stop & Reduce the live points of the enemy if is touched
   private void OnMouseDown() {
-    //Reduce enemy live if is touched
-    enemyLife--;
     //Call the method to slow time from the Game manager
     GameManager.instance.SlowMo();
     //Play the damage SFX
     AudioManager.instance.PlaySFX(2);
     //Call the screen shake method from the game manager
     GameManager.instance.CameraShake();
+    //Instantiate the explotion VFX
+    Instantiate(explotionFX, this.transform.position, this.transform.rotation);
+    //Destroy the enemy
+    Destroy(this.gameObject);
   }
   private void OnCollisionEnter2D(Collision2D other) {
     //Check the tag of the collitions
@@ -59,8 +53,6 @@ public class Enemy : MonoBehaviour
       AudioManager.instance.PlaySFX(2);
       //Destroy the ball
       Destroy(other.gameObject);
-      //Reduce enemy's life
-      enemyLife--;
       //Reduce player Time
       gameManager.ReduceTime(Mathf.RoundToInt(timeToReduce));
       //Call the method to slow time from the Game manager

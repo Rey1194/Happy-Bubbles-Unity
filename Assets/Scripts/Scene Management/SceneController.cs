@@ -11,7 +11,6 @@ public class SceneController : MonoBehaviour
   public void Settings() {
     SceneManager.LoadScene("Settings");
   }
-  //To shop
 
   //To exit the game
   public void OnApplicationQuit() {
