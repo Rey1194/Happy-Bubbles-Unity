@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-  //References in the editor  
+  //References in the editor
   [SerializeField] private float enemySpeed = 0f;
   [SerializeField] private GameObject explotionFX;
   //private variables
