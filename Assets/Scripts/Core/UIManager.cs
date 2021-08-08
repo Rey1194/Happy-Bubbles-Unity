@@ -5,9 +5,8 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
   public static UIManager instance;
-  //Editor Reference
-  [SerializeField] private GameObject winText;
-  [SerializeField] private GameObject loseText;
+  //Editor Reference  
+  [SerializeField] private GameObject pausePanel;
   [SerializeField] private Image pauseButton;
   [SerializeField] private Sprite pauseSprite;
   [SerializeField] private Sprite playSprite;
@@ -27,11 +26,12 @@ public class UIManager : MonoBehaviour
     if(isPaused) {      
       pauseButton.sprite = playSprite;
       Time.timeScale = 0;
+      pausePanel.SetActive(true);
     }
-    else if(!isPaused) {
-      //Time.timeScale = timeBeforePause;
+    else if(!isPaused) {      
       pauseButton.sprite = pauseSprite;
       Time.timeScale = 1;
+      pausePanel.SetActive(false);
     }
     else {
       Debug.Log("Error pausing the game");

@@ -11,7 +11,10 @@ public class SceneController : MonoBehaviour
   public void Settings() {
     SceneManager.LoadScene("Settings");
   }
-
+  //To return to the main Menu
+  public void MainMenu() {
+    SceneManager.LoadScene("MainMenu");
+  }
   //To exit the game
   public void OnApplicationQuit() {
     Debug.Log("Application ending after " + Time.time + " seconds");

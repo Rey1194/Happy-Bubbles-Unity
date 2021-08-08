@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour
   }
   // Update is called once per frame
   void Update()
-  {  
+  {
     //Call the translate method
     TranslateEnemy();
   }
@@ -38,7 +38,7 @@ public class Enemy : MonoBehaviour
     //Call the method to slow time from the Game manager
     GameManager.instance.SlowMo();
     //Play the damage SFX
-    AudioManager.instance.PlaySFX(2);
+    AudioManager.instance.PlaySFX(0);
     //Call the screen shake method from the game manager
     GameManager.instance.CameraShake();
     //Instantiate the explotion VFX
