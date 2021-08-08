@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
   //Convert to singleton
   public static GameManager instance;
   //References in the editor
+  [SerializeField] private GameObject restartPanel;
   [SerializeField] private Animator camAnime;
   [SerializeField] private Animator timeAnime;
   [SerializeField] private Text timeText;
@@ -67,6 +68,8 @@ public class GameManager : MonoBehaviour
         //Lose
         Debug.Log("Game Over");
         Time.timeScale = 0;
+        timeText.text = "0";
+        restartPanel.SetActive(true);
       }
     }
   }

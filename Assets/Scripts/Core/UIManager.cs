@@ -6,7 +6,7 @@ public class UIManager : MonoBehaviour
 {
   public static UIManager instance;
   //Editor Reference  
-  [SerializeField] private GameObject pausePanel;
+  [SerializeField] private GameObject pausePanel;  
   [SerializeField] private Image pauseButton;
   [SerializeField] private Sprite pauseSprite;
   [SerializeField] private Sprite playSprite;
