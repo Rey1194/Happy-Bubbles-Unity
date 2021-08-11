@@ -118,6 +118,8 @@ public class Balls : MonoBehaviour
         Instantiate(explotionFX, this.transform.position, this.transform.rotation);
         //Instantiate the Adding bonus time
         ChanceToDrop();
+        //call the spawner method and create more bubbles
+        GameObject.FindObjectOfType<SpawnManager>().SpawnBalls();
         break;
       //Debug log error message
       default:

@@ -17,7 +17,7 @@ public class UIManager : MonoBehaviour
     instance = this;
   }
   //Restar level method
-  public void Restart() {
+  public void Restart() {    
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
   }
   //pause the game

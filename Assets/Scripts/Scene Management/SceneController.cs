@@ -18,5 +18,6 @@ public class SceneController : MonoBehaviour
   //To exit the game
   public void OnApplicationQuit() {
     Debug.Log("Application ending after " + Time.time + " seconds");
+    Application.Quit();
   }
 }

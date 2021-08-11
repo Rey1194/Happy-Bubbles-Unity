@@ -45,6 +45,8 @@ public class Enemy : MonoBehaviour
     Instantiate(explotionFX, this.transform.position, this.transform.rotation);
     //Destroy the enemy
     Destroy(this.gameObject);
+    //call the enemy spawner method and spawn a new enemy
+    GameObject.FindObjectOfType<EnemyManager>().SpawEnemy();
   }
   private void OnCollisionEnter2D(Collision2D other) {
     //Check the tag of the collitions

@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
   public static GameManager instance;
   //References in the editor
   [SerializeField] private GameObject restartPanel;
+  [SerializeField] private GameObject pauseButton;
   [SerializeField] private Animator camAnime;
   [SerializeField] private Animator timeAnime;
   [SerializeField] private Text timeText;
@@ -70,6 +71,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0;
         timeText.text = "0";
         restartPanel.SetActive(true);
+        pauseButton.SetActive(false);
       }
     }
   }
