@@ -19,6 +19,7 @@ public class UIManager : MonoBehaviour
   //Restar level method
   public void Restart() {    
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    //Show an Ad
   }
   //pause the game
   public void PauseGame() {
