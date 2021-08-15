@@ -5,8 +5,8 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
   public static UIManager instance;
-  //Editor Reference  
-  [SerializeField] private GameObject pausePanel;  
+  //Editor Reference
+  [SerializeField] private GameObject pausePanel;
   [SerializeField] private Image pauseButton;
   [SerializeField] private Sprite pauseSprite;
   [SerializeField] private Sprite playSprite;
@@ -17,19 +17,21 @@ public class UIManager : MonoBehaviour
     instance = this;
   }
   //Restar level method
-  public void Restart() {    
+  public void Restart() {
+    //Call the show advertisement function from the ad manager
+    GameObject.FindObjectOfType<AdManager>().PlayAd();
+    //restart the actual scene
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    //Show an Ad
   }
   //pause the game
   public void PauseGame() {
     isPaused = !isPaused;
-    if(isPaused) {      
+    if(isPaused) {
       pauseButton.sprite = playSprite;
       Time.timeScale = 0;
       pausePanel.SetActive(true);
     }
-    else if(!isPaused) {      
+    else if(!isPaused) {
       pauseButton.sprite = pauseSprite;
       Time.timeScale = 1;
       pausePanel.SetActive(false);

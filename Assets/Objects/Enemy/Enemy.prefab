@@ -185,7 +185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySpeed: 1.2
   explotionFX: {fileID: 7251405496261896155, guid: 6f99fb9c93643aa4ab1e206ea1b9b879, type: 3}
-  enemyPrefab: {fileID: 3526277169609518282}
+  selfDestroyTime: 7
 --- !u!58 &8785469092870115143
 CircleCollider2D:
   m_ObjectHideFlags: 0

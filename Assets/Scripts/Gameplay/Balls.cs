@@ -96,7 +96,7 @@ public class Balls : MonoBehaviour
         //Instantiate the explotion particle effect
         Instantiate(explotionFX, this.transform.position, this.transform.rotation);
         //Instantiate the Adding bonus time
-        ChanceToDrop();       
+        ChanceToDrop();
         break;
       //If is mid size
       case BallSize.mid:
@@ -108,7 +108,7 @@ public class Balls : MonoBehaviour
         //Instantiate the explotion particle effect
         Instantiate(explotionFX,this.transform.position, this.transform.rotation);
         //Instantiate the Adding bonus time
-        ChanceToDrop();     
+        ChanceToDrop();        
         break;
       //If if a small ball
       case BallSize.small:

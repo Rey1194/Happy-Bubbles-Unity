@@ -1016,7 +1016,7 @@ GameObject:
   - component: {fileID: 809071483}
   - component: {fileID: 809071482}
   m_Layer: 0
-  m_Name: MONOS IN STEREO LOGO _Mesa de trabajo 1
+  m_Name: Logo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

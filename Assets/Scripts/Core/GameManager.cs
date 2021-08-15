@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     AudioManager.instance.PlaylevelMusic();
     //start counting down the time
     timeIsRunning = true;
+    UIManager.instance.PauseGame();
   }
   private void Update() {
     //Call the method to reduce time

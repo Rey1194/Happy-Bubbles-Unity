@@ -8,14 +8,12 @@ public class EnemyManager : MonoBehaviour
   [SerializeField] private GameObject[] enemyBalls;
   //private variables
   [SerializeField] private float enemySpawnTime;
-  //[SerializeField] private float enemyWaitTime;
-  [SerializeField] private float timeSpawnEffect;
+  [SerializeField] private float enemyWaitTime;  
   // Start is called before the first frame update
   void Start()
   {
     //call the method to spawn enemies
-    //InvokeRepeating("SpawEnemy", enemySpawnTime, enemyWaitTime);
-    Invoke("SpawEnemy", enemySpawnTime);
+    InvokeRepeating("SpawEnemy", enemySpawnTime, enemyWaitTime);   
   }
   //Spawn Enemies
   public void SpawEnemy() {
