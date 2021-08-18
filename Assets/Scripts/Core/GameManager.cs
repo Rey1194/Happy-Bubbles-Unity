@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     AudioManager.instance.PlaylevelMusic();
     //start counting down the time
     timeIsRunning = true;
+    //start the game paused
     UIManager.instance.PauseGame();
   }
   private void Update() {
@@ -61,18 +62,28 @@ public class GameManager : MonoBehaviour
   }
   //Timer method
   public void CountDown() {
+    //If the time is running
     if (timeIsRunning == true) {
+      //check if the time is greater than 0
       if(timeRemaining > 0) {
+        //if is, reduce the time
         timeRemaining -= Time.deltaTime;
+        //show the remaining time in the UI
         timeText.text = timeRemaining.ToString("0");
       }
       else {
-        //Lose
-        Debug.Log("Game Over");
+        //stop the timeScale
         Time.timeScale = 0;
+        //change the text to 0
         timeText.text = "0";
+        //show the restar panel UI
         restartPanel.SetActive(true);
+        //deactivate the play/pause button
         pauseButton.SetActive(false);
+        //Deactivate the spawn manager
+        GameObject.Find("SpawnManager").SetActive(false);
+        //Deactivate the enemy spawner
+        GameObject.Find("EnemyManager").SetActive(false);
       }
     }
   }
