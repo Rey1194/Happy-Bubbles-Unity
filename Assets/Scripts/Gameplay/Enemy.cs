@@ -28,6 +28,7 @@ public class Enemy : MonoBehaviour
   {
     //Call the translate method
     TranslateEnemy();
+    //Call the destroy enemy method
     DestroyEnemyAfterTime();
   }
   //Move the enemy
@@ -50,11 +51,17 @@ public class Enemy : MonoBehaviour
   }
   //Destroy the enemy ball after time
   private void DestroyEnemyAfterTime() {
+    //reduce the time
     selfDestroyTime -= Time.deltaTime;
+    //set a value between 1 and 5
     float timeToReduce = Random.Range(1, 5);
+    //check if the time is 0
     if(selfDestroyTime <= 0f) {
+      //Instantiate the explotion VFX
       Instantiate(explotionFX, this.transform.position, this.transform.rotation);
+      //Destroy this game object
       Destroy(this.gameObject);
+      //reduce the time
       gameManager.ReduceTime(Mathf.RoundToInt(timeToReduce));
     }
   }
