@@ -230,6 +230,7 @@ MonoBehaviour:
   explotionFX: {fileID: 3990132509615213719, guid: 8a8a9510916eb734a90ae7de490af648, type: 3}
   moveSpeed: 0.9
   selfDestroyTime: 25
+  changeDirectionTime: 4
   chanceToDrop: 7
 --- !u!82 &8745662610620374250
 AudioSource:

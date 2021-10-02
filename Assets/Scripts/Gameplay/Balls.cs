@@ -16,8 +16,10 @@ public class Balls : MonoBehaviour
   //Editor variables
   [SerializeField] private float moveSpeed = 0;
   [SerializeField] private float selfDestroyTime = 0;
+  [SerializeField] private float changeDirectionTime = 0;
   //private variables
   private float rotateSpeed;
+  private float saveDirectionTime;
   private float localSpeed;
   private Vector2 moveDirection;
   private GameManager gameManager;
@@ -28,10 +30,12 @@ public class Balls : MonoBehaviour
     gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     //save the move speed to use for moving the ball again
     this.localSpeed = moveSpeed;
-    //Returns a random point inside or on a circle with radius 1.0
-    this.moveDirection = Random.insideUnitCircle.normalized;
     //Give a random rotate speed between 30 - 60
     this.rotateSpeed = Random.Range(30f, 60f);
+    //Give it to the ball a random direction
+    ChangeDirection();
+    //Save the time to change the direction
+    saveDirectionTime = changeDirectionTime;
   }
   private void FixedUpdate() {
     //rotate the ball
@@ -41,6 +45,20 @@ public class Balls : MonoBehaviour
     //traslate the ball
     this.TranslateBall();
   }
+  private void Update() {
+    //Check if the direction time is greater than 0
+    if(changeDirectionTime > 0) {
+      //If is reduce it after time
+      changeDirectionTime -= Time.deltaTime;
+    }
+    //If not
+    else {
+      //Call the function to change the direction
+      ChangeDirection();
+      //set the original value
+      changeDirectionTime = saveDirectionTime;
+    }
+  }
   //In the ball is touched, destroy it
   private void OnMouseDown() {
     //Plays sound effect
@@ -48,13 +66,18 @@ public class Balls : MonoBehaviour
     //Call the method to destroy the ball
     DestroyBall();
   }
-  //Rotate te ball around itselft
+  //Rotate te ball around itself
   private void RotateBall() {
     this.transform.Rotate(0f, 0f, this.rotateSpeed * Time.deltaTime, Space.Self);
   }
   //translate the ball arround the scene
   private void TranslateBall() {
     this.transform.Translate(this.moveDirection * this.moveSpeed * Time.deltaTime, Space.World);
+  }
+  //Change the direction of the ball
+  private void ChangeDirection() {
+    //Returns a random point inside or on a circle with radius 1.0
+    this.moveDirection = Random.insideUnitCircle.normalized;
   }
   //Destroy the ball after a certain time
   private void DestroyBallAfterTime() {
