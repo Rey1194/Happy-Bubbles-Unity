@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -328,6 +329,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Cute faces_3: 421515374471162870
+      Cute faces_4: -5278523582577359394
+      Cute faces_0: 1731237174703098127
+      Cute faces_5: -3910156938243864345
+      Cute faces_1: -5824269484291374704
+      Cute faces_2: -4698342217786480286
+      Cute faces_6: -1974608763078698780
+      Cute faces_7: 6656607613229557434
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

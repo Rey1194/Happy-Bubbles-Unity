@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -131,7 +131,7 @@ public class Balls : MonoBehaviour
         //Instantiate the explotion particle effect
         Instantiate(explotionFX,this.transform.position, this.transform.rotation);
         //Instantiate the Adding bonus time
-        ChanceToDrop();        
+        ChanceToDrop();
         break;
       //If if a small ball
       case BallSize.small:
