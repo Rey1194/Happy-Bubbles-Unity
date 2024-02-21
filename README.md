@@ -17,7 +17,7 @@ Happy Bubbles is a mobile game project developed in Unity for learning purposes.
 
 To install and play Happy Bubbles on your Android device:
 
-1. Download the APK file from the [releases page](link_to_releases).
+1. Download the APK file from [Here](https://drive.google.com/file/d/1S24kVabUC5dJIxZxf7WWyWdUiwbVAHOx/view?usp=sharing).
 2. Transfer the APK file to your Android device.
 3. On your Android device, navigate to the location of the APK file using a file manager.
 4. Tap on the APK file to initiate the installation process.
