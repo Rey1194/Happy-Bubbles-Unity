@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,15 +7,13 @@ public class SpawnManager : MonoBehaviour
   //Editor's Reference
   [SerializeField] private GameObject[] gameBalls;
   [SerializeField] private float spawnTime = 0;
-  //[SerializeField] private float waitSpawn = 0;
 
   // Start is called before the first frame update
   void Start()
-  {
-    //Call the method to spawn balls
-    //InvokeRepeating("SpawnBalls", spawnTime, waitSpawn);
-    Invoke("SpawnBalls", spawnTime);
+  { 
+      Invoke("SpawnBalls", spawnTime);
   }
+  
   //Spawn balls
   public void SpawnBalls() {
     //Find a random child object position
@@ -23,4 +21,5 @@ public class SpawnManager : MonoBehaviour
     //Instantiate the ball in that random position;
     Instantiate(this.gameBalls[Random.Range(0, this.gameBalls.Length)], position, Quaternion.identity);
   }
+  
 }

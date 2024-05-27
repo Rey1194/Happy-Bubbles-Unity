@@ -64,8 +64,9 @@ public class Balls : MonoBehaviour
     //Plays sound effect
     AudioManager.instance.PlaySFX(0);
     //Call the method to destroy the ball
-    DestroyBall();
+      DestroyBall();
   }
+  
   //Rotate te ball around itself
   private void RotateBall() {
     this.transform.Rotate(0f, 0f, this.rotateSpeed * Time.deltaTime, Space.Self);
@@ -110,31 +111,36 @@ public class Balls : MonoBehaviour
     //Switch between cases of the ball size
     switch (ballSize) {
       //if is big size
-      case BallSize.big:
+    case BallSize.big:
+        GameObject.Find("SpawnWaveManager").GetComponent<SpawnWaveManager>().EnemyDestroyed();
         //destroy the ball
         Destroy(this.gameObject);
         //instantiate 2 mid size balls
-        Instantiate(this.midBall, this.transform.position, Quaternion.identity);
-        Instantiate(this.midBall, this.transform.position, Quaternion.identity);
+        //Instantiate(this.midBall, this.transform.position, Quaternion.identity);
+        //Instantiate(this.midBall, this.transform.position, Quaternion.identity);
+        
         //Instantiate the explotion particle effect
         Instantiate(explotionFX, this.transform.position, this.transform.rotation);
         //Instantiate the Adding bonus time
         ChanceToDrop();
         break;
       //If is mid size
-      case BallSize.mid:
+    case BallSize.mid:
+        GameObject.Find("SpawnWaveManager").GetComponent<SpawnWaveManager>().EnemyDestroyed();
         //Destroy the ball
         Destroy(this.gameObject);
         //Instantiate 2 small balls
-        Instantiate(this.smallBall, this.transform.position, Quaternion.identity);
-        Instantiate(this.smallBall, this.transform.position, Quaternion.identity);
+        //Instantiate(this.smallBall, this.transform.position, Quaternion.identity);
+        //Instantiate(this.smallBall, this.transform.position, Quaternion.identity);
+        
         //Instantiate the explotion particle effect
         Instantiate(explotionFX,this.transform.position, this.transform.rotation);
         //Instantiate the Adding bonus time
         ChanceToDrop();
         break;
       //If if a small ball
-      case BallSize.small:
+    case BallSize.small:
+        GameObject.Find("SpawnWaveManager").GetComponent<SpawnWaveManager>().EnemyDestroyed();
         //destroy the ball
         Destroy(this.gameObject);
         //Instantiate the explotion particle effect
@@ -142,7 +148,7 @@ public class Balls : MonoBehaviour
         //Instantiate the Adding bonus time
         ChanceToDrop();
         //call the spawner method and create more bubbles
-        GameObject.FindObjectOfType<SpawnManager>().SpawnBalls();
+        //GameObject.FindObjectOfType<SpawnManager>().SpawnBalls();
         break;
       //Debug log error message
       default:

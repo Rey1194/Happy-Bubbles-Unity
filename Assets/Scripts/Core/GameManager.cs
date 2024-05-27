@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -83,7 +83,8 @@ public class GameManager : MonoBehaviour
         //Deactivate the spawn manager
         GameObject.Find("SpawnManager").SetActive(false);
         //Deactivate the enemy spawner
-        GameObject.Find("EnemyManager").SetActive(false);
+          //GameObject.Find("EnemyManager").SetActive(false);
+          GameObject.Find("SpawnWaveManager").SetActive(false);
       }
     }
   }
